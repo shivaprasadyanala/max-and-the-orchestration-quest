@@ -1,4 +1,10 @@
-node_modules
+/node_modules          
+.env                    
+npm-debug.log*
+yarn-error.log*
+# macOS system files
+.DS_Store               
+
 # Unity generated folders to ignore
 /apps/unity/max/Library/
 /apps/unity/max/Temp/
@@ -6,3 +12,8 @@ node_modules
 /apps/unity/max/Builds/
 /apps/unity/max/Logs/
 /apps/unity/max/UserSettings/
+
+# Node/React Ignores
+/apps/Backend/node_modules/
+/apps/Frontend/node_modules/
+/node_modules/

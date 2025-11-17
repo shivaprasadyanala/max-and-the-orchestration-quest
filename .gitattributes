@@ -1,0 +1,5 @@
+apps/unity/max/Assets/**/*.prefab filter=lfs diff=lfs merge=lfs -text
+apps/unity/max/Assets/**/*.asset filter=lfs diff=lfs merge=lfs -text
+apps/unity/max/Assets/**/*.png filter=lfs diff=lfs merge=lfs -text
+apps/unity/max/Assets/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+apps/unity/max/Assets/**/*.mp3 filter=lfs diff=lfs merge=lfs -text

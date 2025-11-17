@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: e2e6bafb785c66f4f937cb2d439b829e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Chaplin-spritesheet_0
+  - first:
+      213: 21300002
+    second: Chaplin-spritesheet_1
+  - first:
+      213: 21300004
+    second: Chaplin-spritesheet_2
+  - first:
+      213: 21300006
+    second: Chaplin-spritesheet_3
+  - first:
+      213: 21300008
+    second: Chaplin-spritesheet_4
+  - first:
+      213: 21300010
+    second: Chaplin-spritesheet_5
+  - first:
+      213: 21300012
+    second: Chaplin-spritesheet_6
+  - first:
+      213: 21300014
+    second: Chaplin-spritesheet_7
+  - first:
+      213: 21300016
+    second: Chaplin-spritesheet_8
+  - first:
+      213: 21300018
+    second: Chaplin-spritesheet_9
+  - first:
+      213: 21300020
+    second: Chaplin-spritesheet_10
+  - first:
+      213: 21300022
+    second: Chaplin-spritesheet_11
+  - first:
+      213: 21300024
+    second: Chaplin-spritesheet_12
+  - first:
+      213: 21300026
+    second: Chaplin-spritesheet_13
+  - first:
+      213: 21300028
+    second: Chaplin-spritesheet_14
+  - first:
+      213: 21300030
+    second: Chaplin-spritesheet_15
+  - first:
+      213: 21300032
+    second: Chaplin-spritesheet_16
+  - first:
+      213: 21300034
+    second: Chaplin-spritesheet_17
+  - first:
+      213: 21300036
+    second: Chaplin-spritesheet_18
+  - first:
+      213: 21300038
+    second: Chaplin-spritesheet_19
+  - first:
+      213: 21300040
+    second: Chaplin-spritesheet_20
+  - first:
+      213: 21300042
+    second: Chaplin-spritesheet_21
+  - first:
+      213: 21300044
+    second: Chaplin-spritesheet_22
+  - first:
+      213: 21300046
+    second: Chaplin-spritesheet_23
+  - first:
+      213: 21300048
+    second: Chaplin-spritesheet_24
+  - first:
+      213: 21300050
+    second: Chaplin-spritesheet_25
+  - first:
+      213: 21300052
+    second: Chaplin-spritesheet_26
+  - first:
+      213: 21300054
+    second: Chaplin-spritesheet_27
+  - first:
+      213: 21300056
+    second: Chaplin-spritesheet_28
+  - first:
+      213: 21300058
+    second: Chaplin-spritesheet_29
+  - first:
+      213: 21300060
+    second: Chaplin-spritesheet_30
+  - first:
+      213: 21300062
+    second: Chaplin-spritesheet_31
+  - first:
+      213: 21300064
+    second: Chaplin-spritesheet_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1823
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937c2dbb32cd8b04f95d52032e9b9c1e
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1823
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417acc13c141ec041964ecd978c2d9b8
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1823
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2ba30b87351b241b4ed007e296a7ab
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1823
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a84e524160500f42b8be051fb98fa34
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b84b0aa250ef84681ea63b6ac659b5
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1598
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e13152e1db2a640bc583a1e2d99789
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1598
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6217e368b02bf40a2e5b7bf34a2fd5
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1598
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad3914ecb10c0648907d22f3fcb503e
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1373
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996295185b87c5441baf63c4071e3465
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1373
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01a77d75bcf46a4b858c2ea0c365e91
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1373
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6c50d07131dc948b0237d436a58844
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1373
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801e2b5b63b53c4439b92b5597a3e0df
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1897cbfbfafb44e805ecbd5e369771
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1148
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f3c91c727206f439fb9f184e29aeb2
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1148
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df10be8e10318e468d1c65068a113ba
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1148
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ae6286cd549304dbb74ebb94416971
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 923
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab4511657d0f5940be48a9bc5be70b9
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 923
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627e5b8eb48bc804785daf150bbaf16f
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 923
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05818ee7144ecb42ac18f83f5c621af
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 923
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36798f756fa38b840bc47964094ada04
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfa88e2d756f854e99a943423eb8c6f
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 698
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a4a6c47a461894a9e0be6f303f5c88
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 698
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea3867e09a955d44abdf52fbd75c6d4
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 698
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f970c60f0d53c8c408784c8d8636ba38
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 473
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91473261137115e4ab3dac8dc2e0a8d6
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 473
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69761260fa13bd4095497e5409dc530
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 473
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9d16733499a784abb920d8cd02b7f8
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 473
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b761973a242e8fc488fd1e54aabee847
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0af40540f7c6a2468ebe5d1e220ddc9
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 248
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5f9cfa04b8f4b4ba0eb5ee28e4f2ed
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 248
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6904099ab02af5148ad4c5c9dfebb956
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 248
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804da1b7e47f3fb4dadbb8d46c012698
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaplin-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8a0ba4c2fdc8547972e06446b8a951
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 60cdc51c0ab261642ab42272eb8a3000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chaplin-spritesheet_0: 21300000
+      Chaplin-spritesheet_1: 21300002
+      Chaplin-spritesheet_10: 21300020
+      Chaplin-spritesheet_11: 21300022
+      Chaplin-spritesheet_12: 21300024
+      Chaplin-spritesheet_13: 21300026
+      Chaplin-spritesheet_14: 21300028
+      Chaplin-spritesheet_15: 21300030
+      Chaplin-spritesheet_16: 21300032
+      Chaplin-spritesheet_17: 21300034
+      Chaplin-spritesheet_18: 21300036
+      Chaplin-spritesheet_19: 21300038
+      Chaplin-spritesheet_2: 21300004
+      Chaplin-spritesheet_20: 21300040
+      Chaplin-spritesheet_21: 21300042
+      Chaplin-spritesheet_22: 21300044
+      Chaplin-spritesheet_23: 21300046
+      Chaplin-spritesheet_24: 21300048
+      Chaplin-spritesheet_25: 21300050
+      Chaplin-spritesheet_26: 21300052
+      Chaplin-spritesheet_27: 21300054
+      Chaplin-spritesheet_28: 21300056
+      Chaplin-spritesheet_29: 21300058
+      Chaplin-spritesheet_3: 21300006
+      Chaplin-spritesheet_30: 21300060
+      Chaplin-spritesheet_31: 21300062
+      Chaplin-spritesheet_32: 21300064
+      Chaplin-spritesheet_4: 21300008
+      Chaplin-spritesheet_5: 21300010
+      Chaplin-spritesheet_6: 21300012
+      Chaplin-spritesheet_7: 21300014
+      Chaplin-spritesheet_8: 21300016
+      Chaplin-spritesheet_9: 21300018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

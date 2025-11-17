@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<subtitles>
+
+	<sub index=".0">
+        <text>Paradise</text>بهشت
+    </sub>
+
+  <sub index=".05">
+    <text>Please wait...</text>لطفا صبر کنید
+  </sub>
+	<sub index=".1">
+        <text>New Game</text>بازی جدید
+    </sub>
+  <sub index=".15">
+    <text>Options...</text>تنظیمات...
+  </sub>
+  <sub index=".015">
+    <text>Options</text>تنظیمات
+  </sub>
+  <sub index=".0015">
+    <text>Screen resolution :</text>وضوح صفحه نمایش
+  </sub>
+  
+    <sub index=".2">
+        <text>Continue Game</text>ادامه بازی
+    </sub>
+    <sub index=".3">
+        <text>Exit</text>خروج
+    </sub>
+    <sub index=".4">
+        <text>Start again</text>شروع دوباره
+    </sub>
+    <sub index=".5">
+        <text>Main menu</text>منوی اصلی
+    </sub>
+
+    <sub index=".6">
+        <text>Your previously saved game will be lost, are you sure ?</text>بازی از قبل ذخیره شده شما از بین خواهد رفت 
+    </sub>
+
+    <sub index=".7">
+        <text>Yes</text>بله
+    </sub>
+    <sub index=".8">
+        <text>No</text>خیر
+    </sub>
+
+    <sub index=".9">
+        <text>To be continued ...</text>این داستان ادامه دارد
+    </sub>
+
+    <sub index=".95">
+        <text>Close</text>بازگشت
+    </sub>
+
+    <sub index=".96">
+        <text>Credit...</text>درباره...
+    </sub>
+
+    <sub index=".97">
+        <text>Programmer/Game Designer/Developer</text>برنامه نویس طراح توسعه دهنده
+    </sub>
+
+    <sub index=".98">
+        <text>Khaled Rakhisi</text>خالد رخیصی
+    </sub>
+
+    <sub index=".99">
+        <text>Music</text>موسیقی
+    </sub>
+
+    <sub index=".995">
+        <text>Joachim Heinrich</text>یوآخیم هینریچ
+    </sub>
+
+    <sub index=".996">
+        <text>We hope you enjoyed this game.</text>برای ادامه بازی دکمه باز کردن را کلیک کنید
+    </sub>
+    <sub index=".9996">
+        <text>To Continue the story, click on UNLOCK button</text>برای ادامه بازی دکمه باز کردن را کلیک کنید
+    </sub>
+
+    <sub index=".997">
+        <text>UNLOCK</text>باز کردن
+    </sub>
+
+    <sub index=".998">
+        <text>Please wait...</text>لطفا صبر کنید
+    </sub>
+
+    <sub index="0">
+        <text>Oh...my head</text> وای سرم
+        <text>Ohh noo...my head!</text>
+    </sub>
+
+    <sub index="1">
+        <text>I'm so dizzy..oh no</text> سرم داره گیج میره
+        <text>I'm confused.</text>
+    </sub>
+
+    <sub index="2">
+        <text>My entire body hurts...where is this place ?</text>کل بدنم درد میکنه اینجا کجاست
+        <text>I feel pain in my whole body...where i am ?</text>
+    </sub>
+
+    <sub index="3">
+        <text>I remember nothing!</text> هیچی یادم نمیاد
+        <text>Can't remember anything...!</text>
+    </sub>
+
+    <sub index="4">
+        <text>What a scary forest!</text>چه جنگل ترسناکی
+        <text>This place is so creepy!</text>اینجا خیلی ترسناکه
+    </sub>
+
+    <sub index="5">
+        <text>What's these earthquakes?</text>این زمین لرزه ها چیه
+        <text>Why does the earth quakes so much?</text>
+    </sub>
+
+    <sub index="6">
+        <text>Oh my...what happend to the MOON ?</text>چه بلایی سر ماه اومده
+    </sub>
+
+    <sub index="7">
+        <text>Oh My God</text>وای خدای من
+        <text>Dear God!</text>خدای بزرگ
+    </sub>
+
+    <sub index="8">
+        <text>A pond!...i can't swim so i have to be careful.</text>یه برکه من شنا بلد نیستم باید مواظب باشم
+    </sub>
+
+    <sub index="9">
+        <text>May be i can push this tree trunk in the lake.</text>شاید بتونم این تنه درخت رو هل بدم
+    </sub>
+
+    <sub index="10">
+        <text>The bridge looks loose, so i have to walk slowly.</text>این پل سست بنظر میاد باید آهسته ازش عبور کنم
+    </sub>
+
+    <sub index="11">
+        <text>The bridge is broken...i can't go back anymore.</text>پل خراب شد. دیگه نمیتونم برگردم
+    </sub>
+
+    <sub index="12">
+        <text>This heavy rock is about to fall!</text> این تخته سنگ الانه که بیوفته
+    </sub>
+
+    <sub index="13">
+        <text>My god. it was close!.</text> خدای من بخیر گذشت
+    </sub>
+
+    <sub index="14">
+        <text>Another bridge... the rock has been ruined it! what do i do now ?</text>یه پل دیگه...تخته سنگ داغونش کرد.حالا چیکار کنم؟
+    </sub>
+
+    <sub index="14.5">
+        <text>What was that sound ??!</text>این دیگه صدای چی بود؟
+    </sub>
+
+    <sub index="15">
+        <text>An old TEMPLE, it's so dark and scary!</text> یه معبد قدیمی. خیلی تاریک و ترسناکه
+    </sub>
+
+    <sub index="16">
+        <text>Looks like a MAZE!</text>شبیه هزارتو میمونه
+    </sub>
+
+    <sub index="17">
+        <text>The Gate closed, i should't stay here, i must find my way.</text>ای وای در بسته شد...اینجا موندن خطرناکه..باید راهو پیدا کنم
+    </sub>
+
+    <sub index="18">
+        <text>I feel that i'm going the right way!</text>حس میکنم مسیر رو دارم درست میرم
+    </sub>
+
+    <sub index="19">
+        <text>I arrived to the top of the temple...i can see a pond down there.</text>
+    </sub>
+
+    <sub index="19.5">
+        <text>Gate is locked. i have to find it's key.</text>باید کلید این در رو پیدا کنم احتمالا پایینه
+    </sub>
+
+    <sub index="20">
+        <text>I must crowling here!</text>اینجا باید بخزم و رد شم
+    </sub>
+
+    <sub index="21">
+        <text>Help...</text>کمک
+        <text>...Help...help</text>کمک
+        <text>Help me...</text>کمکم کنید
+    </sub>
+
+    <sub index="22">        
+        <text>I can't breath!</text>نمی تونم نفس بکشم
+    </sub>
+
+    <sub index="23">
+        <text>What a beautiful moonlight shining!</text>چه نور قشنگی از بالا میتابه
+        <text>What a beautiful moonlight!</text>چه مهتاب قشنگی
+    </sub>
+
+    <sub index="24">
+        <text>It's lake a DREAM!</text>مثل یک رویا میمونه
+        <text>It's like a beautiful dream!</text>مثل یک خواب و رویای قشنگ می مونه
+    </sub>
+
+    <sub index="25">
+        <text>Just like a wonderful dream!</text>درست مثل یک رویای زیبا
+    </sub>
+
+    <sub index="26">
+        <text>A peaceful dream!</text>یک رویای آروم
+    </sub>
+
+    <sub index="27">
+        <text>Where am i? am i dead ?</text>من کجام مرده ام
+    </sub>
+
+    <sub index="28">
+        <text>What happend?</text>چه اتفاقی افتاد
+    </sub>
+
+    <sub index="29">
+        <text>Seems like i was dreaming!!</text>انگار داشتم رویا می دیدم
+    </sub>
+
+    <sub index="30">
+        <text>It's so damp and creepy here!</text> چه غار نمناک و ترسناکی
+    </sub>
+
+    <sub index="31">
+        <text>I Can hear the Rats!</text>اینجا موش داره
+    </sub>
+
+    <sub index="32">
+        <text>There is something blinking</text>اونجا یه چیزی داره چشمک میزنه
+    </sub>
+
+    <sub index="33">
+        <text>Thanks god, just what i needed. A FLASHLIGHT!</text>خدارو شکر این چراغ قوه رو پیدا کردم
+        <text>This FLASHLIGHT is very useful here!</text>این چراغ قوه اینجا خیلی دردم میخوره
+    </sub>
+
+    <sub index="34">
+        <text>I feel this is a TRAP!</text>حس میکنم این یه تله ست
+    </sub>
+
+    <sub index="35">
+        <text>I heared a gate open!</text>صدای باز شدن یه در رو شنیدم
+    </sub>
+
+    <sub index="36">
+        <text>I should step carefuly and slowly.</text>باید با احتیاط و آروم راه برم
+    </sub>
+
+    <sub index="37">
+        <text>A high voltage electricity...very dangerous!</text>این برق فشار قویه باید خیلی مواظب باشم
+    </sub>
+
+    <sub index="38">
+        <text>So glad i have could got out of the cave!</text>خدارو شکر تونستم از این غار به سلامت بیام بیرون
+    </sub>
+
+    <sub index="39">
+        <text>I can see light and feel the drizzling.</text>دارم روشنایی میبینم و نم نم بارون چه حس خوبی!!!
+    </sub>
+
+    <sub index="40">
+        <text>This is a LIFTER. it's turned off and i should turn it on!</text>این یه بالابره خاموشه باید روشنش کنم
+        <text>The switch of the lifter must be in the other side of the cave.</text>کلید این بالابر احتمالا اون طرف غاره
+        <text>I have to find the switch of the lifter to get out of here.</text>کلید این بالابر رو باید پیدا کنم تا از این غار برم بیرون
+    </sub>
+
+    <sub index="41">
+        <text>Have to find batteries as much as i can!</text>باید تا جایی که میتونم از این باتری ها پیدا کنم
+    </sub>
+
+    <sub index="42">
+        <text>Electricity is so rare and i have to save energy.</text>انرژی برق خیلی کمیابه باید صرفه جویی کنم
+    </sub>
+
+    <sub index="43">
+        <text>Oh my god...what the hell is happening here??</text>خدای من اینجا چه خبره
+    </sub>
+
+    <sub index="44">
+        <text>So much garbage is here!</text>چقدر زباله اینجاست
+        <text>A tons of garbages!</text>چقدر زباله اینجا ریخته
+        <text>A garbage land!!</text>چقدر زباله چقدر آلودگی
+    </sub>
+
+    <sub index="45">
+        <text>It's an ECOLOGICAL DISASTER</text>این یه فاجعه زیست محیطی وحشتناکه
+    </sub>
+
+    <sub index="46">
+        <text>This DRONE is pursuing me.</text>این روبات پرنده هرجا برم دنبالم میکنه
+    </sub>
+
+    <sub index="47">
+        <text>Apparently i should use my brain!</text>ظاهرا باید از هوش خودم استفاده کنم
+    </sub>
+
+    <sub index="48">
+        <text>A dangerous CIRCULAR SAW!</text>یه اره دوار خطرناک
+        <text>It's not that easy to jump over this saw.</text>به این سادگیا نمی تونم از این اره بپرم
+    </sub>
+
+    <sub index="49">
+        <text>Maybe i could use this crates.</text>شاید بتونم از این جعبه  های چوبی استفاده کنم
+        <text>I have to make my way out by using this crates and my brain!</text>باید با استفاده از این جعبه ها و هوش خودم راه خودمو پیدا کنم
+    </sub>
+
+    <sub index="50">
+        <text>Good Job! what a smart boy i am!!</text>آفرین به خودم عجب هوشی دارم من
+        <text>Finally i succeded to get out of there...BRAVO!!</text>چه خوب تونستم ازش رد بشم آفرین به خودم
+    </sub>
+
+    <sub index="51">
+        <text>Looks like this lifter has no power.</text>ظاهرا برق این بالابر قطع شده
+        <text>I have to connect the power to this lifter first!</text>باید اول برق این بالابر رو وصل کنم
+        <text>No chance this lifter works without electricity power</text>بدون برق این بالابر کار نمیکنه
+    </sub>
+
+    <sub index="52">
+        <text>This trash is connected to a CHAIN. probebly it breaks with a knok.</text>این سطل به یه زنجیر وصله شاید بشه با یه ضربه قطعش کرد
+        <text>This CHAIN does not look so strong...may be it breaks by a knok</text>زنجیر این سطل محکم بنظر نمیاد...شاید بشه با یه ضربه قطعش کرد
+        <text>Guess i have to knok this CHAIN out somehow!</text>
+    </sub>
+
+    <sub index="53">
+        <text>If i drop this crate on the TRASH probebly the chain breaks.</text>اگه این صندوق رو بندازم رو سطل آشغال شاید زنجیرش قطع بشه
+    </sub>
+
+    <sub index="53.5">
+        <text>Again of this tribble sound!</text>باز هم همون صدای همیب
+    </sub>
+
+    <sub index="54">
+        <text>Now the lifter is turned on.</text>الان دیگه بالابر روشنه
+        <text>The GENERATOR is working .thanks god!</text>جنراتور روشن شد خداروشکر
+    </sub>
+
+    <sub index="55">
+        <text>No no no...i should not turn off the generator.</text>جنراتور رو نباید خاموش کنم
+    </sub>
+
+    <sub index="56">
+        <text>BRAVO to myself!, i made my own way!</text>آفرین به خودم راه خودمو باز کردم
+        <text>ACID POOL it's draining!</text>استخر اسید ظاهرا رفت تو زمین
+    </sub>
+
+    <sub index="57">
+        <text>No i should not do this!</text>نه نباید اینکارو بکنم
+    </sub>
+
+    <sub index="58">
+        <text>I can see a SHELTER over there.</text>اونطرف زیر استخر اسید یه پناهگاه میبینم
+    </sub>
+
+    <sub index="59">
+        <text>Oh my...what is this creature?!</text>وای خدای من این دیگه چه موجودیه
+    </sub>
+
+    <sub index="60">
+        <text>Hey!...leave that kid alone!</text>هی کاری به اون پسربچه نداشته باش عوضی
+    </sub>
+
+    <sub index="61">
+        <text>God damn you...i kick you out!!!</text>لعنتی عوضی حسابتو می رسم
+    </sub>
+
+    <sub index="62">
+        <text>Hurry kid...this way</text>زود باش پسر بیا اینجا
+    </sub>
+
+    <sub index="63">
+        <text>Oh my... the gate is closing!!!</text>ای وای الان در بسته میشه
+    </sub>
+
+    <sub index="64">
+        <text>Com'on hurry up...this way</text>زود باش بیا از این طرف
+    </sub>
+
+    <sub index="65">
+        <text>What was that creature??</text>این موجود دیگه چیه
+    </sub>
+
+    <sub index="66">
+        <text>It's not the right time to ask questions.</text>الان وقت سوال و جواب نیست 
+    </sub>
+
+    <sub index="67">
+        <text>What the hell are you doing here kid?? it's so dangerous for you.</text>تو اینجا چیکار میکنی پسر.اینجا خیلی خطرناکه
+    </sub>
+
+    <sub index="68">
+        <text>That creature was ROBOT in fact.</text>این موجود در واقع یه ربات بود
+    </sub>
+
+    <sub index="69">
+        <text>We call it MURDERER HOUND...you were so locky i found you!</text>ما بهش میگیم سگ قاتل...شانس آوردی من اینجا بودم
+    </sub>
+
+    <sub index="70">
+        <text>Would you tell me what's going on here?</text>میشه به من بگی اینجا چه خبره
+    </sub>
+
+    <sub index="71">
+        <text>They are every where...murderer hounds...spies...</text>همه جا هستن...سگهای قاتل...جاسوس ها
+    </sub>
+
+    <sub index="72">
+        <text>Appearenly you are not from this area!</text>از ظاهرت معلومه مال این دور و ورا نیستی پسر
+    </sub>
+
+    <sub index="73">
+        <text>How do you ended up here?!</text>چی شد که سر از اینجا در آوردی؟
+    </sub>
+
+    <sub index="74">
+        <text>I don't remember much...just a bright halo of light!</text>من چیز زیادی یادم نمیاد...یه هاله نور بود اطرافم
+    </sub>
+
+    <sub index="75">
+        <text>Then every thing turned white and i fel to ground...</text>بعدش همه جا سفید شد یه دفه خوردم و زمین  همه بدنم درد میکرد
+    </sub>
+
+    <sub index="76">
+        <text>There is a Date written on that flag...what DATE is it ?</text>رو این پارچه یه تاریخ زده ما تو چه سالی هستیم
+    </sub>
+
+    <sub index="76.5">
+        <text>Oh...thats the sign of RESISTANCE against MACHINES.</text>این علامت نیروی مقاومت علیه ماشین هاست
+    </sub>
+
+    <sub index="77">
+        <text>2289</text>2289
+    </sub>
+
+    <sub index="78">
+        <text>What did you say? i can't beleive it!</text>چی گفتی؟ باورم نمیشه!!
+    </sub>
+
+    <sub index="79">
+        <text>just what i thought! i'm from the past...i can't stay here...</text>پس همونی که حدس میزدم اتفاق افتاد من نمیتونم اینجا بمونم باید برگردم
+    </sub>
+
+    <sub index="80">
+        <text>Why are you living alone and underground?</text>تو چرا زیر زمین و تنها زندگی میکنی؟
+    </sub>
+
+    <sub index="81">
+        <text>All of the survivors live underground.</text>تمام بازمانده ها زیر زمین زندگی میکنن
+    </sub>
+
+    <sub index="82">
+        <text>Killder machines, Acid rains, Extreme heat and Pollution.</text>روبات های قاتل...باران اسیدی...گرمای بیش از حد و آلودگی محیط
+    </sub>
+
+    <sub index="83">
+        <text>Up there is not a place for living anymore.</text>اون بالا دیگه جای زندگی نیست
+    </sub>
+
+    <sub index="84">
+        <text>Our PARADISE is BROKEN for a long time!</text>بهشت ما خیلی وقته ویران شده
+    </sub>
+
+    <sub index="85">
+        <text>We've been on a WAR since 29 years ago</text>الان 29 ساله در حال جنگ هستیم
+    </sub>
+
+    <sub index="86">
+        <text>A war against machies.</text>جنگ علیه ماشین ها
+    </sub>
+
+    <sub index="87">
+        <text>Machines took control of the entire world.</text>ماشین ها کنترل جهان رو در اختیار گرفتند
+    </sub>
+
+    <sub index="88">
+        <text>They made the nature out of ballance by destroying the moon.</text>با نابود کردن کره ماه نظم طبیعت رو بر هم زدند
+    </sub>
+
+    <sub index="89">
+        <text>?...</text>
+    </sub>
+
+    <sub index="90">
+        <text>Due to global warming Every piece of ICE Melted around the world.</text>بر اثر گرمای بیش از حد تمام یخ ها  آب شدند
+    </sub>
+
+    <sub index="91">
+        <text>And due to ice melting the ocean levels came up and swallowed human civilization.</text>با آب شدن  یخ ها سطح اقیانوس ها بالا اومد و همه تمدن بشر رو بلعید
+    </sub>
+
+    <sub index="92">
+        <text>All the fresh water sources ran out...and there come the riot!</text>به علت مصرف بی رویه آب...تمام ذخایر آب شیرین تمام شدند و آشوب به پا شد
+    </sub>
+
+    <sub index="93">
+        <text>Hey...my name is bobby!</text>سلام اسم من بابی ه
+    </sub>
+
+    <sub index="94">
+        <text>I'm an ASSISTANT ROBOT</text>من یه روبات دستیارم
+    </sub>
+
+    <sub index="95">
+        <text>I never saw you before.</text>بار اوله شما رو می بینم
+    </sub>
+
+    <sub index="96">
+        <text>Intersting! an assistant robot. why do you locked up here?</text>چه جالب یه روبات خونگی تو چرا زندانی شدی
+    </sub>
+
+    <sub index="97">
+        <text>My owner locked me up cuz he beleive i'm a playful robot!!!</text>صاحبم منو زندانی کرده چون فکر میکنه من زیادی بازیگوشم
+    </sub>
+
+    <sub index="98">
+        <text>The lever is disabled. you have to turn on the plasma Power Source...</text>کلید غیر فعاله باید بری تو موتور خونه
+    </sub>
+
+    <sub index="99">
+        <text>Is the powerhouse password.</text> رمز ورود به موتور خونه ست
+    </sub>
+
+    <sub index="100">
+        <text>Do not tell my owner i gave you the password.</text>به صاحبم نگو من بهت گفتم
+    </sub>
+
+    <sub index="100.1">
+        <text>Oh my...what a busy power source!</text>خدای من چه دم و دستگاهی
+    </sub>
+
+    <sub index="100.2">
+        <text>This laser is reflecting i must send it to another point.</text>این لیزر منعکس میشه باید یه جایی برسونمش
+    </sub>
+
+    <sub index="101">
+        <text>Hey boss.</text>سلام رئیس
+    </sub>
+
+    <sub index="102">
+        <text>What? what are you doing here?</text>چی ؟ تو اینجا چیکار میکنی؟
+    </sub>
+
+    <sub index="103">
+        <text>Kid you are so smart! how could you get power source to work?!</text>پسر تو خیلی باهوشی چطور تونستی موتورخونه رو راه بندازی 
+    </sub>
+
+    <sub index="104">
+        <text>Actually i could't turn on the power source myself.</text>حقیقتش من نتونستم موتورخونه رو راه بندازم
+    </sub>
+
+    <sub index="105">
+        <text>And for that BOBBY stayed locked up.</text>برای همین بابی تو زندان گرفتار شد
+    </sub>
+
+    <sub index="106">
+        <text>Now if you insist to leave i don't stop you.</text>حالا که اصرار داری بری باشه مشکلی نیست
+    </sub>
+
+    <sub index="107">
+        <text>Bobby...</text>بابی
+    </sub>
+
+    <sub index="108">
+        <text>yes boss? </text>بله رئیس
+    </sub>
+
+    <sub index="109">
+        <text>I have a mission for you...i want you to look after this good boy carefully?</text>یه ماموریت برات دارم...میخوام چهارچشمی مواظب این پسر باشی
+    </sub>
+
+    <sub index="110">
+        <text>Of course boss.</text>باشه رئیس حتما
+    </sub>
+
+    <sub index="111">
+        <text>Well...follow me to lead you to exit</text>خب دنبالم بیا تا بریم سمت خروجی
+    </sub>
+
+    <sub index="112">
+        <text>Bobby will help you out there.</text>اون بیرون بابی کمکت میکنه
+    </sub>
+
+    <sub index="113">
+        <text>On the way you will face a lot of puzzles!</text>تو مسیر به معما و مشکلات زیادی مواجه میشی
+    </sub>
+
+    <sub index="113.5">
+        <text>Always remember to stay away from SPIES</text>همیشه از جاسوس ها دوری کن یادت باشه
+    </sub>
+
+    <sub index="114">
+        <text>I can't come along with you anymore.</text>من بیشتر از این نمیتونم باهات بیام
+    </sub>
+
+    <sub index="115">
+        <text>I wish the best of luck for both of you!</text>برای هردوتون آرزوی موفقیت دارم
+    </sub>
+
+    <sub index="116">
+        <text>Always beleive in GOD.</text>همیشه به خدا ایمان داشته باش
+    </sub>
+
+    <sub index="117">
+        <text>Hope to see you again</text>به امید دیدار دوباره.
+    </sub>
+
+    <sub index="118">
+        <text>Thank you for everything...see you again!</text>از کمکت ممنونم ...به امید دیدار
+    </sub>
+
+    <sub index="119">
+        <text>Well bobby ... are you ready to go?</text>خب بابی آماده ای؟
+    </sub>
+
+    <sub index="120">
+        <text>Yes boss. indeed!</text>بله رئیس کاملا...
+    </sub>
+
+    <sub index="121">
+        <text>Let's go...</text>بزن بریم
+    </sub>
+
+    <sub index="122">
+        <text>As much as you get closer to nature you will find more worthy life - nima youshij</text>هر قدر که به طبیعت نزدیک  میشوی زندگی شایسته تری پیادا میکنی - نیما یوشیج
+    </sub>
+
+    <sub index="123">
+        <text>To be continued...</text>این داستان ادامه دارد
+    </sub>
+
+</subtitles>

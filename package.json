@@ -1,0 +1,22 @@
+{
+  "name": "max-and-the-orchestration-quest",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Khaled <khaled.rakhisi@stud.th-owl.de>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "start:backend": "yarn workspace backend start",
+    "start:frontend": "yarn workspace frontend start",
+    "dev": "yarn start:backend & yarn start:frontend",
+    "install:all": "yarn install",
+    "clean": "rm -rf node_modules apps/*/node_modules libs/*/node_modules"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+# Unity generated folders to ignore
+/apps/unity/max/Library/
+/apps/unity/max/Temp/
+/apps/unity/max/Obj/
+/apps/unity/max/Builds/
+/apps/unity/max/Logs/
+/apps/unity/max/UserSettings/

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5f72a5e1c0cd8894eb85657c9ffad2f3
+timeCreated: 1535123640
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: F_kalaam
+  fontNames:
+  - F_kalaam
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

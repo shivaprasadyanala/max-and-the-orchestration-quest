@@ -1,0 +1,92 @@
+using UnityEngine;
+using System.Collections;
+
+public class PlayerManager : MonoBehaviour {
+
+	private InputState inputState;
+	private Walk walkBehavior;
+	private Animator animator;
+	private CollisionState collisionState;
+	private Duck duckBehavior;
+	private float OriginalWalkSpeed;
+	private float OriginalWalkSpeedMultiplier;
+
+	private enum PlayerAction
+	{
+		Walking,
+		Pushing,
+		Ducking,
+		Fourswalking,
+		Jumping,
+		Idle
+	}
+
+	PlayerAction playerAction = PlayerAction.Idle;
+
+	void Awake(){
+		inputState = GetComponent<InputState> ();
+		walkBehavior = GetComponent<Walk> ();
+		animator = GetComponent<Animator> ();
+		collisionState = GetComponent<CollisionState> ();
+		duckBehavior = GetComponent<Duck> ();
+
+		OriginalWalkSpeed = walkBehavior.speed;
+		OriginalWalkSpeedMultiplier = walkBehavior.runMultiplier;
+	}
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {		
+
+		if (collisionState.standing) {//idle
+			ChangeAnimationState(0);
+
+			playerAction = PlayerAction.Idle;
+		}
+
+		if (inputState.absVelX > 0 && !collisionState.onFense && !duckBehavior.ducking) {//walk
+			walkBehavior.speed = OriginalWalkSpeed;
+			walkBehavior.runMultiplier = OriginalWalkSpeedMultiplier;
+			ChangeAnimationState (1);
+			playerAction = PlayerAction.Walking;
+
+		} else if (inputState.absVelX > 0 && !collisionState.onFense && duckBehavior.ducking) {//fourswalk		
+			walkBehavior.speed = OriginalWalkSpeed / 2f;
+			walkBehavior.runMultiplier = 0f;
+			ChangeAnimationState (8);
+			playerAction = PlayerAction.Fourswalking;
+
+		}else if (inputState.absVelX > 0 && collisionState.onFense && duckBehavior.ducking) {//if hit wall while fourswalk					
+			//walkBehavior.speed = 0f;
+			//walkBehavior.runMultiplier = 0f;
+			ChangeAnimationState(3);
+
+		}else if (inputState.absVelX == 0 && !collisionState.onFense && duckBehavior.ducking) {//duck
+			ChangeAnimationState(3);
+			playerAction = PlayerAction.Ducking;
+		}
+
+		if (inputState.absVelY > 0 && !collisionState.standing) {//jump
+			ChangeAnimationState(2);
+			playerAction = PlayerAction.Jumping;
+		}
+
+		if (collisionState.standing && collisionState.onFense && inputState.absVelX > 0 && !duckBehavior.ducking) {//push
+			walkBehavior.speed = OriginalWalkSpeed / 2f;
+			walkBehavior.runMultiplier = 0f;
+			ChangeAnimationState (4);
+
+			playerAction = PlayerAction.Pushing;
+		}
+			
+		animator.speed = walkBehavior.running ? walkBehavior.runMultiplier : 1;
+	}
+
+	void ChangeAnimationState(int value){
+		animator.SetInteger ("AnimState", value);
+	}
+}

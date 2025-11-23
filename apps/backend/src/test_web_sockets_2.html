@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Server Response — Image List</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --card:#0b1220;
+    --muted:#9aa7b2;
+    --accent:#7dd3fc;
+    --glass: rgba(255,255,255,0.03);
+    --radius:12px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#061018 0%, #071423 100%);color:#e6eef3}
+  .wrap{max-width:1100px;margin:36px auto;padding:20px;}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+  h1{font-size:20px;margin:0;font-weight:600}
+  p.lead{margin:0;color:var(--muted);font-size:13px}
+  .controls{display:flex;gap:8px;align-items:center}
+  input.search{
+    background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:10px 12px;border-radius:10px;color:inherit;
+    min-width:220px;outline:none;font-size:14px;
+  }
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:18px}
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.03);
+    padding:14px;border-radius:var(--radius);backdrop-filter:blur(6px);
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .card-head{display:flex;gap:12px;align-items:center}
+  .logo{
+    width:56px;height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg, rgba(125,211,252,0.08), rgba(124,58,237,0.04));
+    border-radius:10px;flex-shrink:0;
+  }
+  .logo svg{width:36px;height:36px;opacity:0.95}
+  .title{display:flex;flex-direction:column;min-width:0}
+  .iname{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .itag{font-size:12px;color:var(--muted);margin-top:2px}
+  .id-block{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;font-size:12px;color:#dceff8;word-break:break-all}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .btn{
+    background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 10px;border-radius:9px;color:var(--accent);
+    font-weight:600;font-size:13px;cursor:pointer;
+  }
+  .btn.ghost{color:var(--muted);border:1px dashed rgba(255,255,255,0.03);font-weight:500}
+  .small{font-size:12px;padding:6px 8px;border-radius:8px}
+  .pull-cmd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(10,20,30,0.6);padding:10px;border-radius:8px;font-size:13px;color:#cfeefd}
+  .footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .empty{padding:40px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);text-align:center;color:var(--muted)}
+  .toast{
+    position:fixed;right:18px;bottom:18px;background:#0b2230;border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:10px;color:#c9f7ff;
+    box-shadow:0 6px 30px rgba(2,6,23,0.6);opacity:0;transform:translateY(12px);transition:0.28s cubic-bezier(.2,.9,.3,1);
+  }
+  .toast.show{opacity:1;transform:translateY(0)}
+  @media (max-width:420px){
+    .logo{width:48px;height:48px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap" role="main">
+  <header>
+    <div>
+      <h1>Parsed server response — container images</h1>
+      <p class="lead">Rendered from the JSON array you provided. Use the search box to filter by name or id.</p>
+    </div>
+    <div class="controls" aria-hidden="false">
+      <input id="q" class="search" placeholder="Search image name or id..." />
+      <button id="copyAll" class="btn ghost small" title="Copy all pull commands">Copy all pulls</button>
+    </div>
+  </header>
+
+  <div id="grid" class="grid" aria-live="polite"></div>
+
+  <div class="footer">
+    <div>Items shown: <span id="count">0</span></div>
+    <div style="color:var(--muted)">Tip: click a pull command or "Copy" to copy it to clipboard</div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ====== Data: parsed server response (use exactly what you sent) ====== */
+const images = [
+  {"image_id":"sha256:67c6b93d6155fac09d30759ea5f28e5ce01b4e865a783fb418c878806bf5397d","image_name":"excalidraw/excalidraw:latest"},
+  {"image_id":"sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412","image_name":"alpine:latest"},
+  {"image_id":"sha256:df635af12e9d5826f848d3d0f998178ddf61d8bf2072802b719ab57700e35168","image_name":"uzyexe/tetris:latest"}
+];
+
+/* ====== Utilities ====== */
+function el(tag, attrs={}, ...children){
+  const e = document.createElement(tag);
+  for(const k in attrs) {
+    if(k==='class') e.className = attrs[k];
+    else if(k==='html') e.innerHTML = attrs[k];
+    else e.setAttribute(k, attrs[k]);
+  }
+  for(const c of children){
+    if(typeof c === 'string') e.appendChild(document.createTextNode(c));
+    else if(c instanceof Node) e.appendChild(c);
+  }
+  return e;
+}
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=> t.classList.remove('show'), 2200);
+}
+
+/* ====== Renderer ====== */
+const grid = document.getElementById('grid');
+const countEl = document.getElementById('count');
+
+function makeCard(item){
+  const {image_id, image_name} = item;
+  const pullCmd = `docker pull ${image_name}`;
+
+  // small logo (box icon)
+  const logo = el('div',{class:'logo'});
+  logo.innerHTML = `
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-opacity="0.8" stroke-width="1.2" fill="none"></rect>
+      <path d="M8 9h8M8 13h4" stroke="currentColor" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round"></path>
+    </svg>
+  `;
+
+  const title = el('div',{class:'title'},
+    el('div',{class:'iname'}, image_name),
+    el('div',{class:'itag'}, image_id.slice(0,12) + '…')
+  );
+
+  const head = el('div',{class:'card-head'}, logo, title);
+
+  const idBlock = el('div',{class:'id-block', title:image_id}, image_id);
+
+  const pullCmdEl = el('div',{class:'pull-cmd', role:'textbox', tabindex:0}, pullCmd);
+  // clickable to copy
+  pullCmdEl.addEventListener('click', ()=> {
+    navigator.clipboard.writeText(pullCmd).then(()=> showToast('Pull command copied'));
+  });
+
+  const btnCopyId = el('button',{class:'btn small', title:'Copy image id'}, 'Copy id');
+  btnCopyId.addEventListener('click', ()=>{
+    navigator.clipboard.writeText(image_id).then(()=> showToast('Image id copied'));
+  });
+
+  const btnCopyName = el('button',{class:'btn small', title:'Copy image name'}, 'Copy name');
+  btnCopyName.addEventListener('click', ()=>{
+    navigator.clipboard.writeText(image_name).then(()=> showToast('Image name copied'));
+  });
+
+  // optional Docker Hub link if the name looks like repo[:tag]
+  const repoLink = (() => {
+    // try to get repo path part before tag
+    const repoOnly = image_name.split(':')[0];
+    // If repoOnly contains a slash, it's likely a dockerhub repo path; create a link.
+    if(repoOnly.includes('/')){
+      const a = el('a',{href:`https://hub.docker.com/r/${repoOnly}`, target:'_blank', rel:'noopener', class:'btn ghost small'}, 'Open on Docker Hub');
+      return a;
+    } else {
+      return null;
+    }
+  })();
+
+  const meta = el('div',{class:'meta'}, btnCopyName, btnCopyId);
+  if(repoLink) meta.appendChild(repoLink);
+
+  const card = el('article',{class:'card', role:'article', 'aria-label': image_name},
+    head,
+    idBlock,
+    pullCmdEl,
+    meta
+  );
+  return card;
+}
+
+function render(list){
+  grid.innerHTML = '';
+  if(!list || list.length === 0){
+    grid.appendChild(el('div',{class:'empty'}, 'No images found'));
+  } else {
+    for(const item of list){
+      grid.appendChild(makeCard(item));
+    }
+  }
+  countEl.textContent = (list||[]).length;
+}
+
+/* ====== Search / interactions ===== */
+const q = document.getElementById('q');
+q.addEventListener('input', ()=> {
+  const v = q.value.trim().toLowerCase();
+  if(!v) render(images);
+  else {
+    const filtered = images.filter(it => it.image_name.toLowerCase().includes(v) || it.image_id.toLowerCase().includes(v));
+    render(filtered);
+  }
+});
+
+document.getElementById('copyAll').addEventListener('click', ()=>{
+  const allPulls = images.map(i => `docker pull ${i.image_name}`).join('\\n');
+  navigator.clipboard.writeText(allPulls).then(()=> showToast('All pull commands copied'));
+});
+
+/* ====== Kickoff ===== */
+render(images);
+
+/* ====== Accessibility: keyboard focus for pull commands ===== */
+document.addEventListener('keydown', (ev)=>{
+  if(ev.key === 'f' && (ev.ctrlKey || ev.metaKey)){
+    ev.preventDefault();
+    q.focus();
+  }
+});
+</script>
+</body>
+</html>

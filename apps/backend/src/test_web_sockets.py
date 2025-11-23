@@ -77,6 +77,28 @@ async def stop_container(ws,container_name):
     except Exception as e:
         await ws.send(json.dumps({"status": "cannot stop the container", "message": str(e)}))
 
+async def remove_container(ws,container_name):
+    try:
+        container_object=client.containers.get(container_name)
+        container_object.remove()
+        result_object = {
+            "container_name":container_object.name,
+            "container_id":container_object.id,
+            "container_status": container_object.status
+        }
+        await ws.send(json.dumps("container "+container_name+" is removed"))
+    except Exception as e:
+        await ws.send(json.dumps({"status": "cannot remove the container", "message": str(e)}))
+
+
+async def remove_image(ws,image_name):
+    try:
+        image_object=client.images.get(image_name)
+        image_object.remove()
+        await ws.send(json.dumps("image "+image_name+" is removed"))
+    except Exception as e:
+        await ws.send(json.dumps({"status": "cannot remove the image", "message": str(e)}))
+
 async def get_container_list(ws):
     container_list = []
     containers = client.containers.list(all=True)
@@ -89,6 +111,18 @@ async def get_container_list(ws):
     # print(container_list)
     await ws.send(json.dumps(container_list))
 
+async def get_image_list(ws):
+    image_list = []
+    images = client.images.list(all=True)
+    print(images)
+    for image in images:
+        image_object =  {} 
+        image_object["image_id"] = image.id
+        image_object["image_name"] = image.tags[0]
+        # image_object["image_status"] = image.status
+        image_list.append(image_object)
+    # print(container_list)
+    await ws.send(json.dumps(image_list))
 
 # ---- IMAGE PULL THREAD SAFE ---- #
 def pull_image_thread(websocket, image_name, done_event):
@@ -160,10 +194,17 @@ async def handler(websocket, path):
         elif message == "get_random":
             tasks.append(asyncio.create_task(stream_random(websocket)))
 
-        elif message == "get_containers":
+        # function for getting docker containers
+        elif message == "list_containers":
             # print(message)
             tasks.append(asyncio.create_task(get_container_list(websocket)))
 
+         # function for getting docker containers
+        elif message == "list_images":
+            # print(message)
+            tasks.append(asyncio.create_task(get_image_list(websocket)))
+
+        # function for creating docker containers.
         elif message.startswith("create_container:"):
             image_name = message.split(":")[1]
             print(message)
@@ -178,6 +219,16 @@ async def handler(websocket, path):
             container_name = message.split(":")[1]
             print(message)
             tasks.append(asyncio.create_task(stop_container(websocket,container_name)))
+
+        elif message.startswith("remove_container:"):
+            container_name = message.split(":")[1]
+            print(message)
+            tasks.append(asyncio.create_task(remove_container(websocket,container_name)))
+
+        elif message.startswith("remove_image:"):
+            image_name = message.split(":")[1]
+            print(message)
+            tasks.append(asyncio.create_task(remove_image(websocket,image_name)))
 
         elif message.startswith("stats:"):
             container = message.split(":")[1]

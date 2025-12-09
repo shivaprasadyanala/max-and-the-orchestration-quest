@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Docker Client</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #eee; padding: 20px; }
+        button { margin: 5px; padding: 10px; background: #444; color: white; border: none; cursor: pointer; }
+        button:hover { background: #666; }
+        #log { margin-top: 20px; background: #000; padding: 10px; border: 1px solid #333; height: 400px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+
+    <h1>WebSocket Client</h1>
+
+    <button onclick="sendMsg('get_time')">Get Time</button>
+    <button onclick="sendMsg('pull_image:alpine')">Pull Alpine</button>
+    <button onclick="sendMsg('list_images')">List Images</button>
+    <button onclick="sendMsg('list_containers')">List Containers</button>
+    <button onclick="sendMsg('remove_image:alpine')">Remove Alpine</button>
+
+    <div id="log"></div>
+
+    <script>
+        /*const log = msg => {
+            const div = document.getElementById("log");
+            div.innerHTML += msg + "<br>";
+            div.scrollTop = div.scrollHeight;
+        };
+*/
+        const log = msg => {
+    const div = document.getElementById("log");
+
+    // If it's an array of objects, format it nicely
+    console.log(JSON.parse(msg.data))
+    console.log(typeof msg)
+    if (Array.isArray(msg) && msg.every(item => typeof item === "object")) {
+        msg = `<pre>${JSON.stringify(msg, null, 2)}</pre>`;
+    }
+
+    div.innerHTML += msg + "<br>";
+    div.scrollTop = div.scrollHeight;
+};
+
+        const ws = new WebSocket("ws://localhost:8765");
+
+        ws.onopen = () => log("🟢 Connected to WebSocket.");
+        ws.onclose = () => log("🔴 Disconnected from server.");
+        ws.onerror = err => log("⚠️ WebSocket Error: " + err);
+        ws.onmessage = msg => log("📥 " + msg.data);
+
+        function sendMsg(cmd) {
+            log("📤 Sent: " + cmd);
+            ws.send(cmd);
+        }
+    </script>
+
+</body>
+</html>

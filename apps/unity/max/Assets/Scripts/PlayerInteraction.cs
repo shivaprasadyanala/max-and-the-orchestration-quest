@@ -6,7 +6,6 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerInteraction : AbstractBehavior {
 
 	public bool interacted = false;
-
 	float holdTime = 0f;
 
 	void Update(){

@@ -21,8 +21,9 @@ Step 1: Clone the Repository
 
 Clone the project from GitHub and navigate into the root directory.
 
-git clone MaxPi-Monorepo
-cd MaxPi-Monorepo
+# Clone using the official repo name
+git clone git@github.com:khaledrakhisi/max-and-the-orchestration-quest.git max-and-the-orchestration-quest
+cd max-and-the-orchestration-quest
 
 Step 2: Install Dependencies and Configure Workspaces
 
@@ -32,10 +33,10 @@ This step installs all required Node.js and React dependencies across the entire
 yarn install
 
 # 2. Create the necessary environment file for the backend (CRITICAL: DO NOT COMMIT THIS)
-cp Docker/.env.example apps/Backend/.env
+cp docker/.env.example apps/backend/.env
 
 
-(You may need to edit apps/Backend/.env to specify your MongoDB connection string or custom port.)
+(You may need to edit apps/backend/.env to specify your MongoDB connection string or custom port.)
 
 Step 3: Run the Backend API (Node.js/TypeScript)
 
@@ -49,7 +50,7 @@ Expected Output: The server should start on port 3000 (or the port specified in 
 
 Step 4: Run the Frontend Dashboard (React.js)
 
-The frontend provides the administrative dashboard and leaderboards (React application). This uses the standard start script from the apps/Frontend/package.json.
+The frontend provides the administrative dashboard and leaderboards (React application). This uses the standard start script from the apps/frontend/package.json.
 
 # Execute the 'start' script defined for the Frontend workspace
 yarn workspace frontend start

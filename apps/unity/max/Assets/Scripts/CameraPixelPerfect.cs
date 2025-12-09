@@ -8,13 +8,13 @@ public class CameraPixelPerfect : MonoBehaviour {
     public float pixelsToUnits = 100f;
 	public float scale = 100f;	
 
-	void Awake () {
+	void Start () {
 		var camera = GetComponent<Camera> ();
 
 		if (camera.orthographic) {
 			scale = Screen.height/nativeResolution.y;
 			pixelsToUnits *= scale;
-			camera.orthographicSize = (Screen.height / 2.0f) / pixelsToUnits;
+			camera.orthographicSize = Screen.height / 2.0f / pixelsToUnits;
 		}
 	}
 

@@ -181,7 +181,7 @@ async def stream_stats(ws, container):
 #     await ws.send(json.dumps(data))
 
 # ---- MAIN WEBSOCKET HANDLER ---- #
-async def handler(websocket, path):
+async def handler(websocket):
     tasks = []
 
     async for message in websocket:

@@ -87,6 +87,7 @@
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\Scripts\Laser.cs" />
     <Compile Include="Assets\Scripts\DirectorWorker.cs" />
+    <Compile Include="Assets\Scripts\Factory.cs" />
     <Compile Include="Assets\Scripts\LadderClimbing.cs" />
     <Compile Include="Assets\Scripts\RandomIdle.cs" />
     <Compile Include="Assets\Scripts\DustEffect.cs" />
@@ -163,6 +164,7 @@
     <Compile Include="Assets\Scripts\AnimationLoadManager.cs" />
     <Compile Include="Assets\Scripts\DetailObjectAI.cs" />
     <Compile Include="Assets\Scripts\FireFlame.cs" />
+    <Compile Include="Assets\Scripts\Rotate2D.cs" />
     <Compile Include="Assets\Scripts\ObjectPhysics.cs" />
     <Compile Include="Assets\Scripts\LedgeGrabbing.cs" />
     <Compile Include="Assets\Scripts\Languages.cs" />
